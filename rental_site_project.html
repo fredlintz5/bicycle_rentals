@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en”>
+
+<head>
+    <meta charset="UTF-8”>
+
+        <!--Responsive Mobile Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Portfolio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron jumbotron-fluid">
+        <h1>Bicycle Rentals</h1>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card" id="search">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Dates and Availability
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Pickup Location</label>
+                  <div class="col-9">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Highlands Ranch</option>
+                      <option>Denver</option>                    
+                    </select>
+                  </div>
+              </div> 
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Rental Type</label>
+                  <div class="col-9">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Mountain</option>
+                      <option>Road</option> 
+                      <option>Hybrid</option>                    
+                    </select>                  
+                  </div>
+              </div>                                                                                                
+              <div class="form-group row">
+                <label for="example-date-input" class="col-3 col-form-label">Pick Up Date</label>
+                <div class="col-9">
+                  <input class="form-control" type="date" placeholder="mm/dd/yyyy" id="example-date-input" required>
+                </div>
+              </div>  
+              <div class="form-group row">
+                <label for="example-date-input" class="col-3 col-form-label">Return Date</label>
+                <div class="col-9">
+                  <input class="form-control" type="date" placeholder="mm/dd/yyyy" id="example-date-input" required>
+                </div>
+              </div> 
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Available Rentals</label>
+                  <div class="col-9">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Trek X-Caliber 7 - Small </option>
+                      <option>Trek X-Caliber 7 - Medium </option>
+                      <option>Trek X-Caliber 7 - Large </option> 
+                      <option>Trek X-Caliber 7 - X-Large </option> 
+                      <option>Trek Domane S5 Disc - 54 CM </option>
+                      <option>Trek Domane S5 Disc - 56 CM </option>
+                      <option>Trek Domane S5 Disc - 58 CM </option>
+                      <option>Trek Domane S5 Disc - 60 CM </option> 
+                      <option>Trek FX 3 - Small </option>
+                      <option>Trek FX 3 - Medium </option>
+                      <option>Trek FX 3 - Large </option> 
+                      <option>Trek FX 3 - X-Large </option>                                     
+                    </select> 
+                  </div>
+              </div> 
+              <button type="submit" class="btn btn-primary btn-block">Continue</button> 
+          </div>
+        </div>
+        <div class="card" id="contact">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Contact Info
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-block">
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">First Name</label>
+                  <div class="col-9">
+                    <input class="form-control" type="text" placeholder="John" id="example-text-input" required>
+                  </div>
+              </div> 
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Last Name</label>
+                  <div class="col-9">
+                    <input class="form-control" type="text" placeholder="Doe" id="example-text-input" required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Address</label>
+                  <div class="col-9">
+                    <input class="form-control" type="text" placeholder="123 Main Street" id="example-text-input" required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="text-input" class="col-3 col-form-label">City</label>
+                  <div class="col-9">
+                    <input class="form-control" type="text" placeholder="Gotham" id="example-text-input" required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">State</label>
+                  <div class="col-9">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Alabama</option>
+                      <option>Alaska</option> 
+                      <option>Arizona</option> 
+                      <option>Arkansas</option>
+                      <option>California</option> 
+                      <option>Colorado</option> 
+                      <option>Connecticut</option>
+                      <option>Delaware</option> 
+                      <option>Florida</option> 
+                      <option>Georgia</option>
+                      <option>Hawaii</option> 
+                      <option>Idaho</option> 
+                      <option>Illinois</option>
+                      <option>Indiana</option> 
+                      <option>Iowa</option> 
+                      <option>Kansas</option>
+                      <option>Kentucky</option> 
+                      <option>Louisiana</option> 
+                      <option>Maine</option>
+                      <option>Maryland</option> 
+                      <option>Massachusetts</option> 
+                      <option>Michigan</option>
+                      <option>Minnesota</option> 
+                      <option>Mississippi</option> 
+                      <option>Missouri</option>
+                      <option>Montana</option> 
+                      <option>Nebraska</option> 
+                      <option>Nevada</option>
+                      <option>New Hampshire</option> 
+                      <option>New Jersey</option> 
+                      <option>New Mexico</option>
+                      <option>New York</option> 
+                      <option>North Carolina</option> 
+                      <option>North Dakota</option>
+                      <option>Ohio</option> 
+                      <option>Oklahoma</option> 
+                      <option>Oregon</option>
+                      <option>Pennsylvania</option> 
+                      <option>Rhode Island</option> 
+                      <option>South Carolina</option>
+                      <option>South Dakota</option> 
+                      <option>Tennessee</option> 
+                      <option>Texas</option> 
+                      <option>Utah</option> 
+                      <option>Vermont</option>
+                      <option>Washington</option> 
+                      <option>West Virginia</option>
+                      <option>Wisconsin</option> 
+                      <option>Wyoming</option>
+                    </select>                  
+                  </div>
+              </div>  
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Zip Code</label>
+                  <div class="col-9">
+                    <input class="form-control" type="text" placeholder="12345" id="example-text-input" required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-3 col-form-label">Driver's License Number</label>
+                  <div class="col-9">
+                    <input class="form-control" type="text" placeholder="99-999-9999" id="example-text-input" required>
+                  </div>
+              </div>             
+              <div class="form-group row">
+                <label for="example-email-input" class="col-3 col-form-label">Email</label>
+                <div class="col-9">
+                  <input class="form-control" type="email" placeholder="johndoe@email.com" id="example-email-input" required>
+                </div>
+              </div>              
+              <div class="form-group row">
+                <label for="example-tel-input" class="col-3 col-form-label">Phone Number</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" value="(800)-867-5309" id="example-tel-input" required>
+                </div>
+              </div> 
+              <button type="submit" class="btn btn-primary btn-block">Continue</button>                               
+            </div>
+          </div>
+        </div>
+        <div class="card" id="legal">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Legal Stuff
+              </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-block">
+              <h2>Terms and Conditions</h2>
+              <hr>
+              <p>
+                State of Virginia, excluding conflict of law provisions. Nothing in this License: 1.1 "Applicable Patent Rights" mean: (a) in the Software, and to charge a fee for, warranty, support, indemnity or liability obligation is offered by You to the risks and costs of program errors, compliance with the appropriate decompression or de-archiving software is widely available for at least twelve (12) months after a new version of Covered Code. However, You may add Your own behalf, and the rights set forth in this Agreement.
+              </p>
+              <p>
+                No one other than you, you are re-using, b) a copy of the Contribution. No hardware per se is licensed hereunder. Recipient understands that although each Contributor hereby grants to You for damages, including any general, special, incidental and consequential damages, such as Sun's Network File System (NFS).
+              </p>
+              <p>
+                Work' A version of that or any Modifications that you charge for the electronic transfer of data (an "Electronic Distribution Mechanism" means a work based on or incorporates Python or any portion of it, under Paragraph 2) in object code form under this Agreement will be given a distinguishing version number. Effect of Termination. In the event Licensee prepares a derivative of it, under Section 6. Modified Code. You must cause all Covered Code of the following in a manner which does not grant permission to use such Original Code the copyright notice and this License to you when allowing others to access the modified files to carry prominent notices stating that you changed the files and the real names of the terms of this Agreement, each Contributor disclaim any liability incurred by Licensor to you under Sections 2.1(b) and 2.2(b) are effective on the Program. Each Contributor must identify itself as well as conditions under which modified versions of the Work; if your work you want or need to make arrangements wholly outside of your status as Current Maintainer. If the previously unreachable Current Maintainer who has indicated in the event of the Program, the Contributor Version; 2) separate from the Program (or any work of authorship, including the original test modes, this license document the following unique, persistent identifier (known as a consequence of a contract shall be construed against the Source of the Modified Version. Permissions for Redistribution of the Source Code file due to its knowledge it has not been modified, or has been advised of the Derivative Works that You changed the files pig.dtx and pig.ins % and version 1.3 or later is part of Derivative Works.
+              </p>
+              <br>          
+              <div class="form-group row text-center">
+                <div class="col-sm-12">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" required>
+                    </label>
+                    <label>"I Agree to the terms and Conditions as stated above."</label>  
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Continue</button> 
+          </div>
+        </div>
+        <div class="card" id="payment">
+          <div class="card-header" role="tab" id="headingFour">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Payment Info
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="card-block">
+              <div class="form-group row">
+                  <div class="col-6">
+                    <input class="form-control" type="text" placeholder="First Name" id="example-text-input" required>
+                  </div>
+                  <div class="col-6">
+                    <input class="form-control" type="text" placeholder="Last Name" id="example-text-input" required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-6">
+                    <input class="form-control" type="text" placeholder="Credit Card Number" id="example-text-input" required>
+                  </div>
+                  <div class="col-6">
+                    <input class="form-control" type="text" placeholder="CCV" id="example-text-input" required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-6">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Visa</option>
+                      <option>Master Card</option> 
+                      <option>Discover</option>
+                      <option>AMEX</option>                    
+                    </select>
+                  </div>
+                  <div class="col-6">                  
+                    <input class="form-control" type="month" placeholder="Exp Date" id="example-month-input">
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit Payment</button>              
+            </div>
+          </div>
+        </div>
+        <div class="card" id="summary">
+          <div class="card-header" role="tab" id="headingFive">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Rental Summary
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="card-block">
+              <h2 class="text-center">Enjoy your ride!</h2>
+              <br>
+              <p>Name: </p>
+              <p>Address: </p>
+              <p>City: </p>
+              <p>State: </p>
+              <p>Zip: </p>
+
+              <p>Rental Dates: </p>
+              <p>Rental Bike: </p>
+              <p>Amount Paid: </p>
+              <button type="submit" class="btn btn-primary btn-block">Email me a copy of my Rental Summary</button>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+ 
+
+</body>
+</html>
+
+
