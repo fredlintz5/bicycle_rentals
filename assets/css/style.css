@@ -1,0 +1,69 @@
+body {
+    /*background-image: url(../images/bicycleBackground.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;*/
+    background: #333;
+}
+
+button {
+	cursor: pointer;
+}
+
+.text-shadow {
+    color: white;
+    text-shadow: 1px 1px #333;
+}
+
+.text-white {
+    color: white;
+}
+
+.card {
+    opacity: 0.9;
+}
+
+.hide {
+	display: none;
+}
+
+#header {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+#rental_addOn{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#pickUp_addOn{
+    padding-left: 24px;
+    padding-right: 23px;
+}
+
+#return_addOn{
+    padding-left: 28px;
+    padding-right: 27px;
+}
+
+#options_addOn {
+    padding-left: 24px;
+    padding-right: 23px;
+}
+
+/*this removes rounded borders on the select inputs*/
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
