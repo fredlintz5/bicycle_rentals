@@ -57,14 +57,15 @@ function geolocate() {
 }
 
 
-
 $('#submitLegal').click(() => {
 	 if ($("#checkbox").is(':checked')) {
-    $('#search').attr('class', 'hide');
-    $('#contact').attr('class', 'hide');
-    $('#legal').attr('class', 'hide');
-    $('#goBackButton').attr('class', '');
-    $('#shoppingCart').attr('class', '');
+    $('#search').addClass('hide');
+    $('#contact').addClass('hide');
+    $('#legal').addClass('hide');
+    $('#agree').addClass('hide');
+    $('#paypal').removeClass('hide'); 
+    $('#goBackButton').removeClass('hide');
+    $('#shoppingCart').removeClass('hide');
    } 
 });
 
@@ -78,11 +79,13 @@ $('#agreeStatement').click(() => {
 });
 
 $('#goBack').click(() => {
-  $('#search').attr('class', '');
-  $('#contact').attr('class', '');
-  $('#legal').attr('class', '');
-  $('#goBackButton').attr('class', 'hide');
-  $('#shoppingCart').attr('class', 'hide');
+  $('#search').removeClass('hide');
+    $('#contact').removeClass('hide');
+    $('#legal').removeClass('hide');
+    $('#agree').removeClass('hide');
+    $('#paypal').addClass('hide'); 
+    $('#goBackButton').addClass('hide');
+    $('#shoppingCart').addClass('hide');
 });
 
 

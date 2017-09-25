@@ -1,4 +1,3 @@
-console.log('checkout loaded');
 
 paypal.Button.render({
 

@@ -14,6 +14,10 @@ button {
     cursor: pointer;
 }
 
+.mt25 {
+    margin-top: 25px;
+}
+
 .text-shadow {
     color: white;
     text-shadow: 1px 1px #333;
@@ -24,7 +28,23 @@ button {
 }
 
 .card {
-    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.card-header {
+    background: #eee;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.card-block {
+    background: #fff;
+    padding: 15px 10px 1px 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .hide {
@@ -36,9 +56,9 @@ button {
 	margin-bottom: 5vh;
 }
 
-#rental_addOn{
-    padding-left: 18px;
-    padding-right: 18px;
+#location_addOn{
+    padding-left: 22px;
+    padding-right: 21px;
 }
 
 #pickUp_addOn{
@@ -59,6 +79,20 @@ button {
 #goBackButton {
     text-align: center;
     margin-bottom: 30px;
+}
+
+#submitLegal {
+    margin-bottom: 200px;
+}
+
+#legal {
+    height: 350px;
+    overflow: auto;
+}
+
+#contact .input-group-addon {
+    padding-left: 41px;
+    padding-right: 41px;
 }
 
 /*this removes rounded borders on the select inputs*/
