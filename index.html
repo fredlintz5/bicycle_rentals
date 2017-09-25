@@ -33,7 +33,7 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
 
-        <div id="search">
+        <div id="search" class="">
           <div class="text-white">
             <h4 class="text-center">Dates and Availability</h4>
           </div>
@@ -124,21 +124,23 @@
               Work' A version of that or any Modifications that you charge for the electronic transfer of data (an "Electronic Distribution Mechanism" means a work based on or incorporates Python or any portion of it, under Paragraph 2) in object code form under this Agreement will be given a distinguishing version number. Effect of Termination. In the event Licensee prepares a derivative of it, under Section 6. Modified Code. You must cause all Covered Code of the following in a manner which does not grant permission to use such Original Code the copyright notice and this License to you when allowing others to access the modified files to carry prominent notices stating that you changed the files and the real names of the terms of this Agreement, each Contributor disclaim any liability incurred by Licensor to you under Sections 2.1(b) and 2.2(b) are effective on the Program. Each Contributor must identify itself as well as conditions under which modified versions of the Work; if your work you want or need to make arrangements wholly outside of your status as Current Maintainer. If the previously unreachable Current Maintainer who has indicated in the event of the Program, the Contributor Version; 2) separate from the Program (or any work of authorship, including the original test modes, this license document the following unique, persistent identifier (known as a consequence of a contract shall be construed against the Source of the Modified Version. Permissions for Redistribution of the Source Code file due to its knowledge it has not been modified, or has been advised of the Derivative Works that You changed the files pig.dtx and pig.ins % and version 1.3 or later is part of Derivative Works.
             </p>
             <br>          
-            <div class="form-group row text-center">
-              <div class="col-sm-12">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox">
-                  </label>
-                  <label>"I Agree to the terms and Conditions as stated above."</label>  
-                </div>
+            <div class="form-group text-center">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input id="checkbox" class="form-check-input cursor" type="checkbox">
+                </label>
+                <label id="agreeStatement" class="cursor">"I Agree to the terms and Conditions as stated above."</label>  
               </div>
             </div>
-            <button id="legalContinue" class="btn btn-primary btn-block" type="submit">Continue</button> 
+            <button id="submitLegal" class="btn btn-primary btn-block" type="submit">Continue</button> 
           </div>
         </div>
 
-        <div id="shopping_cart" class="">
+        <div id="goBackButton" class='hide'>
+          <button id='goBack' class='btn btn-success' type='submit'>Go Back</button>
+        </div>
+
+        <div id="shoppingCart" class="hide">
           <div class="text-white">
             <h4 class="text-center">Payment Info</h4>
           </div>
@@ -154,26 +156,24 @@
           <div class="form-group">
             <input class="form-control" type="text" placeholder="CCV">
           </div>
+          <div>
             <div class="text-center" id="paypal-button"></div>
           </div>
         </div>
       
-        <div class="card hide" id="summary">
-          <div class="card-header">
-            <h5 class='text-center'>Rental Summary</h5>
-          </div>
-          <div class="card-block">
-            <h2>Enjoy your ride!</h2>
+        <div id="summary" class="hide">
+          <div class='text-white'>
+            <h4 class='text-center'>Rental Summary</h4>
             <br>
-            <p>Name: </p>
-            <p>Address: </p>
-            <p>City: </p>
-            <p>State: </p>
-            <p>Zip: </p>
-            <p>Rental Dates: </p>
-            <p>Rental Bike: </p>
-            <p>Amount Paid: </p>
-            <button type="submit" class="btn btn-primary btn-block">Email me a copy of my Rental Summary</button>
+            <p id='summaryName'>Name: </p>
+            <p id='summaryAddres'>Address: </p>
+            <p id='summaryCity'>City: </p>
+            <p id='summaryState'>State: </p>
+            <p id='summaryZip'>Zip: </p>
+            <p id='summaryDates'>Dates: </p>
+            <p id='summaryBike'>Bike: </p>
+            <p id='summaryPaid'>Amount Paid: </p>
+            <button id='summaryEmail' class="btn btn-primary btn-block" type="submit">Email me a copy of my Rental Summary</button>
           </div>
         </div>
 

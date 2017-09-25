@@ -58,23 +58,34 @@ function geolocate() {
 
 
 
-
-
-$('#submitSearch').click(() => {
-
-});
-
-
-$('#submitContact').click(() => {
-
-});
-
-
 $('#submitLegal').click(() => {
-	
+	 if ($("#checkbox").is(':checked')) {
+    $('#search').attr('class', 'hide');
+    $('#contact').attr('class', 'hide');
+    $('#legal').attr('class', 'hide');
+    $('#goBackButton').attr('class', '');
+    $('#shoppingCart').attr('class', '');
+   } 
+});
+
+$('#agreeStatement').click(() => {
+  if ($("#checkbox").prop('checked')) {
+    $('#checkbox').prop('checked', '');
+  } else {
+    $('#checkbox').prop('checked', 'true');
+  }
+  
+});
+
+$('#goBack').click(() => {
+  $('#search').attr('class', '');
+  $('#contact').attr('class', '');
+  $('#legal').attr('class', '');
+  $('#goBackButton').attr('class', 'hide');
+  $('#shoppingCart').attr('class', 'hide');
 });
 
 
-$('#submitPayment').click(() => {
-	
-});
+
+
+
