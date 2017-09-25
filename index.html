@@ -15,6 +15,7 @@
         <!-- Javascript Links -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>
 
 <body>
@@ -137,50 +138,32 @@
           </div>
         </div>
 
-        <div id="payment" class="hide">
-          <div class="card-header">
-            <h5>Payment Info</h5>
+        <div id="shopping_cart" class="">
+          <div class="text-white">
+            <h4 class="text-center">Payment Info</h4>
           </div>
-          <div class="card-block">
-            <div class="form-group row">
-                <div class="col-6">
-                  <input class="form-control" type="text" placeholder="Paypal API? Widget?" id="example-text-input" required>
-                </div>
-                <div class="col-6">
-                  <input class="form-control" type="text" placeholder="Last Name" id="example-text-input" required>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-6">
-                  <input class="form-control" type="text" placeholder="Credit Card Number" id="example-text-input" required>
-                </div>
-                <div class="col-6">
-                  <input class="form-control" type="text" placeholder="CCV" id="example-text-input" required>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-6">
-                  <select class="form-control" id="exampleSelect1">
-                    <option>Visa</option>
-                    <option>Master Card</option> 
-                    <option>Discover</option>
-                    <option>AMEX</option>                    
-                  </select>
-                </div>
-                <div class="col-6">                  
-                  <input class="form-control" type="month" placeholder="Exp Date" id="example-month-input">
-                </div>
-            </div>
-            <button type="submit" id="paymentContinue" class="btn btn-primary btn-block">Submit Payment</button>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Paypal API? Widget?">
+          </div>  
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Credit Card Number">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="CCV">
+          </div>
+            <div class="text-center" id="paypal-button"></div>
           </div>
         </div>
       
         <div class="card hide" id="summary">
           <div class="card-header">
-            <h5>Rental Summary</h5>
+            <h5 class='text-center'>Rental Summary</h5>
           </div>
           <div class="card-block">
-            <h2 class="text-center">Enjoy your ride!</h2>
+            <h2>Enjoy your ride!</h2>
             <br>
             <p>Name: </p>
             <p>Address: </p>
@@ -200,6 +183,7 @@
   </div> 
   
 <script src='assets/javascript/logic.js'></script>
+<script src='assets/javascript/checkout.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl-ZCWcyUrNHqbqj4kwahbHv_NhNyj_As&libraries=places&callback=initAutocomplete"
         async defer></script>
 </body>
